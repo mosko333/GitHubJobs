@@ -20,7 +20,7 @@ class JobController {
         url.appendPathComponent("positions")
         url.appendPathExtension("json")
         
-            //QUERIES
+        //QUERIES
         //Step 1: Get URL components
         var componets = URLComponents(url: url, resolvingAgainstBaseURL: true)
         //Step 2: get array of queries
@@ -32,6 +32,25 @@ class JobController {
         guard let finalUrl = componets?.url else { completion(nil) ; return }
         print("📡📡📡\(finalUrl.absoluteString)📡📡📡")
         
+        // request - not needed because we are using defualt settings
         
+        //URLSession, dataTask - resume - decode
+        URLSession.shared.dataTask(with: finalUrl) { (data, _, error) in
+            if let error = error {
+                print("❌ Error fetching data \(error.localizedDescription)")
+                completion(nil) ; return
+            }
+            
+            guard let data = data else { completion(nil) ; return }
+            let jsonDecoder = JSONDecoder()
+            do {
+                let jobs = try jsonDecoder.decode([Job].self, from: data)
+                completion(jobs) ; return
+            }catch {
+                print("❌ Error decoding data \(error.localizedDescription)")
+                completion(nil) ; return
+            }
+            
+            }.resume()
     }
 }

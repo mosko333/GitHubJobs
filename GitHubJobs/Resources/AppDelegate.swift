@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // For testing
     //
     
-//        JobController.fetchJobs(searchTerm: "swift") { (job) in
-//            print("Test")
+//        JobController.fetchJobs(searchTerm: "swift") { (jobs) in
+//            print(jobs?.count)
 //        }
+    
         return true
     }
 
