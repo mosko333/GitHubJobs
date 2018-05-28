@@ -13,6 +13,8 @@
 		7E1CCEB920BC9AC000779AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1CCEB720BC9AC000779AD3 /* LaunchScreen.storyboard */; };
 		7EF8C64D20BC9D49008D1B91 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8C64C20BC9D49008D1B91 /* Job.swift */; };
 		7EF8C64F20BC9E2D008D1B91 /* JobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8C64E20BC9E2D008D1B91 /* JobController.swift */; };
+		7EF8C65120BCA916008D1B91 /* JobListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8C65020BCA916008D1B91 /* JobListTableViewController.swift */; };
+		7EF8C65320BCAAAC008D1B91 /* JobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF8C65220BCAAAC008D1B91 /* JobsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E1CCEBA20BC9AC000779AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EF8C64C20BC9D49008D1B91 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		7EF8C64E20BC9E2D008D1B91 /* JobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobController.swift; sourceTree = "<group>"; };
+		7EF8C65020BCA916008D1B91 /* JobListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListTableViewController.swift; sourceTree = "<group>"; };
+		7EF8C65220BCAAAC008D1B91 /* JobsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				7E1CCEB220BC9ABF00779AD3 /* Main.storyboard */,
 				7E1CCEB720BC9AC000779AD3 /* LaunchScreen.storyboard */,
+				7EF8C65220BCAAAC008D1B91 /* JobsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 		7EF8C64B20BC9CB8008D1B91 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7EF8C65020BCA916008D1B91 /* JobListTableViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -180,6 +186,8 @@
 			files = (
 				7EF8C64F20BC9E2D008D1B91 /* JobController.swift in Sources */,
 				7E1CCEAF20BC9ABF00779AD3 /* AppDelegate.swift in Sources */,
+				7EF8C65320BCAAAC008D1B91 /* JobsTableViewCell.swift in Sources */,
+				7EF8C65120BCA916008D1B91 /* JobListTableViewController.swift in Sources */,
 				7EF8C64D20BC9D49008D1B91 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
