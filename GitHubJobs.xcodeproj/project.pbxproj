@@ -54,14 +54,30 @@
 		7E1CCEAD20BC9ABF00779AD3 /* GitHubJobs */ = {
 			isa = PBXGroup;
 			children = (
-				7E1CCEAE20BC9ABF00779AD3 /* AppDelegate.swift */,
+				7E1CCEC120BC9AF500779AD3 /* Views */,
+				7E1CCEC020BC9AEA00779AD3 /* Resources */,
 				7E1CCEB020BC9ABF00779AD3 /* ViewController.swift */,
-				7E1CCEB220BC9ABF00779AD3 /* Main.storyboard */,
-				7E1CCEB520BC9AC000779AD3 /* Assets.xcassets */,
-				7E1CCEB720BC9AC000779AD3 /* LaunchScreen.storyboard */,
-				7E1CCEBA20BC9AC000779AD3 /* Info.plist */,
 			);
 			path = GitHubJobs;
+			sourceTree = "<group>";
+		};
+		7E1CCEC020BC9AEA00779AD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E1CCEAE20BC9ABF00779AD3 /* AppDelegate.swift */,
+				7E1CCEB520BC9AC000779AD3 /* Assets.xcassets */,
+				7E1CCEBA20BC9AC000779AD3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E1CCEC120BC9AF500779AD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E1CCEB220BC9ABF00779AD3 /* Main.storyboard */,
+				7E1CCEB720BC9AC000779AD3 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
